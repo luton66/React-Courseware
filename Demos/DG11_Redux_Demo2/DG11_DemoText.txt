@@ -1,0 +1,52 @@
+1) Install redux - npm i redux --save-dev
+2) Create a directory for the store
+3) Create a file called store.js
+4) Initialise the store in store.js
+5) Create a directory for the reducers
+6) Create a file called rootReducer.js
+7) Populate the file, providing initial state
+8) Create a directory for actions
+9) Create a file called actions.js
+10) Populate actions with addArtice
+11) Create a directory called constants
+12) Create a file called action-types.js
+13) Export a constant ADD_ARTICLE
+14) Update actions.js to use constant
+15) Refactor the rootReducer in rootReducer.js
+16) Install transform-object-rest-spread - npm i babel-plugin-transform-object-rest-spread --save-dev
+17) Update webpack.config.js to add plugin setting after presets
+18) Update main.js by:
+19) Exposing the store on the console using the window object in
+20) Run application in browser
+21) Type store.getState() in console
+// Should display: {articles: Array(0)}
+// Zero articles - haven't updated the initial state yet
+// Listen for updates using subscribe
+// Accepts a callback that will fire whenever an action is dispatched - notifies store that we want to change the state
+22) Register callback by typing store.subscribe(()=>console.log('Look at me, I'm using Redux!'))
+// To change state in Redux, need to dispatch an action
+// To dispatch action, need to call dispatch method
+23) Dispatch action by typing store.dispatch( addArticle({name: 'React Redux Example', id: 1}))
+// Should display - Look, I'm using Redux!
+// Verify that the state changed
+24) Type store.getState()
+// Should display - {articles: Array(1)}
+
+// Now need to connect React to Redux
+// Redux is framework/library agnostic
+// To join React and Redux together you need react-redux package
+25) Install react-redux by running: npm i react-redux --save-dev
+// Application will contain components:
+// a) App
+// b) List - for displaying articles
+// c) Form - for adding new articles
+26) Update main.js so that it renders the application
+27) Create App component in components directory
+28) Create List component in components directory
+// Form component more complex - stateful
+// Fine to have stateful components when using Redux
+// Not all application's state should be in Redux
+// Update state of Form component internally
+// Update global state by dispatching addArticle action
+29) Create Form component in components directory
+30) Update App component to include Form to add new article

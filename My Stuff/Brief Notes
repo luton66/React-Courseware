@@ -1,0 +1,10 @@
+ReactDOM.render(
+  <Header />,
+  document.querySelector('header')
+);
+
+ReactDOM.render(
+  <Content />,
+  document.querySelector('#content')		// The # highlights the div id within the index.html file 
+  											// Not required for header as there is actually a header
+);

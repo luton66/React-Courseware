@@ -1,0 +1,40 @@
+ed.wright@qa.com
+// npm i (install)
+
+npm i react react-dom
+npm i babel-polyfill babel-core babel-loader babel-preset-env babel-preset-react
+
+//UNMET PEER DEPENDENCY - can't find webpac which we install next.
+
+npm i webpack webpack-dev-server webpack-cli
+
+npm init -y
+
+//-y just accepts the defaults
+
+
+change package.json to have this ...
+
+  "scripts": {
+    "start": "webpack-dev-server --mode=development --open",
+    "build": "webpack -p"
+  },
+
+create an index.html in then type "!" and press TAB - will create a skeleton page
+
+////////////// - Now looking at the zero config version
+
+npm i -g create-react-app
+
+// -g is for a global installation so that it can be run from anywhere
+
+- then simply go to preferred directory 
+
+npx create-react-app my-app		//or whatever you'd prefer it to be called
+
+
+
+
+
+
+//	header>nav>ul>li*3>a[href="#"]^^^main+footer			usefull trick - called Emmet Abbreviation

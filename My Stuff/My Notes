@@ -1,0 +1,54 @@
+My Notes
+--------
+
+npm i -g json-server
+	- json-server starWars.json -p 8080
+	?? json-server -watch starWars.json -p 8080
+
+npm i redux-thunk	//for working asynchronously
+
+(removing a thing - npm uninstall -pckg-)
+
+NodeJs wasn't working, we had to update
+
+Go to https://nodejs.org/en/download
+	- LTS
+
+	Install
+
+
+
+//Notes from instructor
+/ Close all cmds
+/ node -v 
+npx create-react-app my-app		//This would have been after doing the node i -g create-react-app to globally install
+								// create-react-app
+
+chrome react developer tools
+
+Jest - can be used for testingdir
+
+
+///Building a production viable javascript file
+
+remember "build": "webpack -p"
+
+running npm build   this means that just index.html and index.sj
+
+///
+
+<React.Fragment> 
+...
+</React.Fragment>
+//a non rendering fragment. 
+
+/// default / non-default import
+
+if at th end of a class I put 'export default App', then when importing it I can write "import App from './app'" otherwise "import {app} from './app'"
+
+Always do an npm i in the folder to set things up. npm 
+
+
+npm i prop-tpyes 		//to install prop types in a component. Then import PropTypes in the jsx file
+
+ChanceJs - www.chancejs.com - Generate random info (good for test data) "npm i chance"
